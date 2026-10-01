@@ -9,7 +9,7 @@
       - "reopened"
   "schedule":
     -
-      "cron": "0 1 * * *"
+      "cron": "0 1 * * 1"
   "workflow_call":
     "secrets":
       "CODECOV_TOKEN":

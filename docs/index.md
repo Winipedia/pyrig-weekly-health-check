@@ -42,6 +42,33 @@
 
 ---
 
-> Add your description here
+> A pyrig plugin that runs the health check weekly.
 
 ---
+
+## Overview
+
+This [pyrig](https://github.com/Winipedia/pyrig) plugin changes the generated
+Health Check workflow from a daily scheduled run to a weekly one. Manual
+dispatch, pull request, and reusable-workflow triggers are preserved.
+
+## Installation
+
+Install the plugin in a pyrig-managed project, then update its files:
+
+```bash
+uv add pyrig-weekly-health-check --dev
+uv run pyrig sync
+```
+
+## Schedule
+
+The scheduled run is every Monday at 01:00 UTC, expressed as `0 1 * * 1`.
+GitHub Actions interprets scheduled workflow cron expressions in UTC.
+
+## How It Works
+
+The plugin subclasses pyrig's `HealthCheckWorkflowConfigFile` and overrides
+only `cron_schedule()`. All other workflow behavior comes from pyrig unchanged.
+
+See the [API reference](api.md) for more detail.

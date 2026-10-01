@@ -42,6 +42,25 @@
 
 ---
 
-> Add your description here
+> A pyrig plugin that runs the health check weekly.
 
 ---
+
+## Overview
+
+A [pyrig](https://github.com/Winipedia/pyrig) plugin that changes the Health
+Check workflow's scheduled run from daily to every Monday at 01:00 UTC. Manual
+dispatch, pull request, and reusable-workflow triggers remain unchanged.
+
+## Usage
+
+```bash
+uv add pyrig-weekly-health-check --dev
+uv run pyrig sync
+```
+
+Pyrig discovers the plugin automatically. Sync regenerates
+`.github/workflows/health_check.yml` with the weekly schedule (`0 1 * * 1`).
+
+See the [documentation](https://Winipedia.github.io/pyrig-weekly-health-check)
+for the full schedule details and API reference.

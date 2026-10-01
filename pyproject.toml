@@ -1,7 +1,7 @@
 [project]
 name = "pyrig-weekly-health-check"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.0.0"
+description = "A pyrig plugin that runs the health check weekly."
 readme = "README.md"
 requires-python = ">=3.12"
 license = "MIT"
@@ -26,6 +26,7 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
+  "pyrig>=18.85.1",
   "pyrig-runtime>=3.24.4",
 ]
 
