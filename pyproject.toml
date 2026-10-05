@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-weekly-health-check"
-version = "1.0.5"
+version = "1.0.6"
 description = "A pyrig plugin that runs the health check weekly."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -119,3 +119,7 @@ select = [
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+[tool.ryl.rules]
+ALL = "enable"
+key-ordering = "disable"
