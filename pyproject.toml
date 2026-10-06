@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-weekly-health-check"
-version = "1.0.12"
+version = "1.0.15"
 description = "A pyrig plugin that runs the health check weekly."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -51,7 +51,6 @@ dev = [
   "pyflakes>=4.0.1",
   "pyrig-opensource>=1.0.2",
   "pyrig-plugin>=0.1.0",
-  "pyrig-pypi>=3.20.48",
   "pytest>=9.1.1",
   "pytest-cov>=7.1.0",
   "pytest-randomly>=5.0.0",
