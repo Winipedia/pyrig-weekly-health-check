@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-weekly-health-check"
-version = "1.0.11"
+version = "1.0.12"
 description = "A pyrig plugin that runs the health check weekly."
 readme = "README.md"
 requires-python = ">=3.12"
