@@ -4,7 +4,7 @@ from pyrig.rig.configs.version_control.remote.workflows.health_check import (
     HealthCheckWorkflowConfigFile as BaseHealthCheckWorkflowConfigFile,
 )
 
-from pyrig_weekly_health_check.rig.configs.version_control.remote.workflows.health_check import (
+from pyrig_weekly_health_check.rig.configs.version_control.remote.workflows.health_check import (  # noqa: E501
     HealthCheckWorkflowConfigFile,
 )
 
