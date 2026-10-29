@@ -1,6 +1,6 @@
 """GitHub Actions workflow generator for the health check CI stage."""
 
-from typing import Literal
+from typing import Literal, override
 
 from pyrig.rig.configs.version_control.remote.workflows.health_check import (
     HealthCheckWorkflowConfigFile as BaseHealthCheckWorkflowConfigFile,
@@ -10,6 +10,7 @@ from pyrig.rig.configs.version_control.remote.workflows.health_check import (
 class HealthCheckWorkflowConfigFile(BaseHealthCheckWorkflowConfigFile):
     """Health check workflow scheduled to run weekly."""
 
+    @override
     def cron_schedule(self) -> tuple[int, int, Literal["*"], Literal["*"], int]:
         """Return the weekly Monday schedule at 01:00 UTC.
 
