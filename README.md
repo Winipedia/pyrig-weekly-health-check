@@ -1,7 +1,7 @@
 # pyrig-weekly-health-check
 
 <!-- project-status -->
-[![CI](https://img.shields.io/github/actions/workflow/status/Winipedia/pyrig-weekly-health-check/health_check.yml?label=CI&logo=github)](https://github.com/Winipedia/pyrig-weekly-health-check/actions/workflows/health_check.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/Winipedia/pyrig-weekly-health-check/health-check.yml?label=CI&logo=github)](https://github.com/Winipedia/pyrig-weekly-health-check/actions/workflows/health-check.yml)
 [![CD](https://img.shields.io/github/actions/workflow/status/Winipedia/pyrig-weekly-health-check/release.yml?label=CD&logo=github)](https://github.com/Winipedia/pyrig-weekly-health-check/actions/workflows/release.yml)
 [![ProjectTester](https://codecov.io/gh/Winipedia/pyrig-weekly-health-check/branch/main/graph/badge.svg)](https://codecov.io/gh/Winipedia/pyrig-weekly-health-check)
 <!-- code-quality -->
@@ -63,7 +63,7 @@ uv run pyrig sync
 ```
 
 Pyrig discovers the plugin automatically. Sync regenerates
-`.github/workflows/health_check.yml` with the weekly schedule (`0 1 * * 1`).
+`.github/workflows/health-check.yml` with the weekly schedule (`0 1 * * 1`).
 
 See the [documentation](https://Winipedia.github.io/pyrig-weekly-health-check)
 for the full schedule details and API reference.
